@@ -1,0 +1,33 @@
+
+
+    <ul class="navbar-nav">
+        <ng-container *ngIf="isSignedIn; else loggedOutTemplate">
+            <li class="nav-item">
+                <!--TODO: Click routes to the Manage Index-->
+               <a id="manage" class="nav-link text-dark" title="Manage" routerLink="/profile" routerLinkActive="active">Hello {{userName}}</a>
+            </li>
+            <li class="nav-item">
+                <button id="logout" class="nav-link btn btn-link text-dark" (click)="logOut($event)">Logout</button>
+            </li>
+        </ng-container>
+
+        <ng-template #loggedOutTemplate>
+            <li class="nav-item">
+                <a class="nav-link text-dark" id="register" routerLink="/register" routerLinkActive="active">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" id="login" routerLink="/login" routerLinkActive="active">Login</a>
+            </li>
+        </ng-template>
+
+    </ul>
+
+    <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item">
+            <a class="nav-link text-dark" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" routerLink="/privacy" routerLinkActive="active">Privacy</a>
+        </li>
+    </ul>
+
