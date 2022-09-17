@@ -21,6 +21,7 @@ import { ForgotPasswordPageComponent } from './pages/forgot-password-page/forgot
 import { ResendEmailConfirmationPageComponent } from './pages/resend-email-confirmation-page/resend-email-confirmation-page.component';
 import { ValidationMessagesComponent } from './components/validation-messages/validation-messages.component';
 import { ExternalLoginComponent } from './components/external-login/external-login.component';
+import { ResendEmailConfirmationComponent } from './components/resend-email-confirmation/resend-email-confirmation.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { ExternalLoginComponent } from './components/external-login/external-log
     LoginTwoFactorComponent,
     ResetPasswordComponent,
     ChangePasswordComponent,    
-    PageTitleComponent, ForgotPasswordPageComponent, ResendEmailConfirmationPageComponent, ValidationMessagesComponent, ExternalLoginComponent
+    PageTitleComponent, ForgotPasswordPageComponent, ResendEmailConfirmationPageComponent, ValidationMessagesComponent, ExternalLoginComponent, ResendEmailConfirmationComponent
   ],
   imports: [
     BrowserModule,
