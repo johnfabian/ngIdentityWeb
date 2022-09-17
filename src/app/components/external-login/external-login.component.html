@@ -1,0 +1,24 @@
+<ng-container *ngIf="externalLoginCount == 0; else externalLoginCountTemplate">
+    <div>
+        <p>
+            There are no external authentication services configured. See <a
+                href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
+            for details on setting up this ASP.NET application to support logging in via external services.
+        </p>
+    </div>
+</ng-container>
+
+<ng-template #externalLoginCountTemplate>
+    <form id="external-account" routerLink="/external-login" routerLinkActive="active"
+        class="form-horizontal">
+        <div>
+            <p>
+                <!--External login Buttons-->
+                <!-- @foreach (var provider in Model.ExternalLogins)
+                    {
+                        <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                    } -->
+            </p>
+        </div>
+    </form>
+</ng-template>

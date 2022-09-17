@@ -10,6 +10,17 @@ import { PrivacyPageComponent } from './pages/privacy-page/privacy-page.componen
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AccessDeniedPageComponent } from './pages/access-denied-page/access-denied-page.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { LoginTwoFactorComponent } from './components/login-two-factor/login-two-factor.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { ChangePasswordComponent } from './components/change-password/change-password.component';
+import { PageTitleComponent } from './components/page-title/page-title.component';
+import { ForgotPasswordPageComponent } from './pages/forgot-password-page/forgot-password-page.component';
+import { ResendEmailConfirmationPageComponent } from './pages/resend-email-confirmation-page/resend-email-confirmation-page.component';
+import { ValidationMessagesComponent } from './components/validation-messages/validation-messages.component';
+import { ExternalLoginComponent } from './components/external-login/external-login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +32,14 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
     PrivacyPageComponent,
     HomePageComponent,
     AccessDeniedPageComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgotPasswordComponent,
+    LoginTwoFactorComponent,
+    ResetPasswordComponent,
+    ChangePasswordComponent,    
+    PageTitleComponent, ForgotPasswordPageComponent, ResendEmailConfirmationPageComponent, ValidationMessagesComponent, ExternalLoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({  
-  templateUrl: './home-page.component.html'  
+  templateUrl: './forgot-password-page.component.html'
 })
-export class HomePageComponent implements OnInit {
+export class ForgotPasswordPageComponent implements OnInit {
 
   constructor() { }
 
